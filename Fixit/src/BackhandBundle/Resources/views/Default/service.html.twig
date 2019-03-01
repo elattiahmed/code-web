@@ -1,0 +1,41 @@
+{% extends 'baseBackend.html.twig' %}
+
+{% block header %}
+    {{ parent() }}
+{% endblock %}
+{% block content %}
+    {{ parent() }}
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <td>
+                <a href="{{ path('formation_index1') }}">formation</a>
+            </td>
+            <td>
+                <a href="{{ path('evenement_index2') }}">evenement</a>
+            </td>
+            <td>
+                <a href="{{ path('participation_index1') }}">participation</a>
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <p>ici vou pouvez ajouter ou modifier ou meme visionner vos formations</p>
+            </td>
+            <td>
+                <p>  ici vou pouvez ajouter ou modifier ou meme visionner vos evenement</p>
+            </td>
+            <td>
+                <p>  ici vou pouvez ajouter ou modifier ou meme visionner vos participations</p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    {% block script %}
+        {{ parent() }}
+    {% endblock %}
+
+    </body>
+{% endblock %}

@@ -1,0 +1,7 @@
+client_homepage:
+    path:     /
+    defaults: { _controller: ClientBundle:Default:index }
+client_profil:
+    path:     /profil
+    defaults: { _controller: ClientBundle:Default:profil }
+

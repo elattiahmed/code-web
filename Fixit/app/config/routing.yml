@@ -1,0 +1,25 @@
+backhand:
+    resource: "@BackhandBundle/Resources/config/routing.yml"
+    prefix:   /admi
+
+formation:
+    resource: "@FormationBundle/Resources/config/routing.yml"
+    prefix:   /formation
+
+fixit_evenement:
+    resource: "@FixitBundle/Controller/evenementController.php"
+    type:     annotation
+
+client:
+    resource: "@ClientBundle/Resources/config/routing.yml"
+    prefix:   /client
+
+fixit:
+    resource: "@FixitBundle/Resources/config/routing.yml"
+    prefix:   /fixit
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

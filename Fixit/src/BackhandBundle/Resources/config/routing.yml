@@ -1,0 +1,6 @@
+backhand_homepage:
+    path:     /
+    defaults: { _controller: BackhandBundle:Default:index }
+backhand_service:
+    path:     /service
+    defaults: { _controller: BackhandBundle:Default:services }

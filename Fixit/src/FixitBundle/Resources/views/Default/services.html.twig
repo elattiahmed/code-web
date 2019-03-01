@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+{% block header %}
+    {{ parent() }}
+{% endblock %}
+{% block content %}
+    {{ parent() }}
+
+    {% block script %}
+        {{ parent() }}
+    {% endblock %}
+
+    </body>
+{% endblock %}
